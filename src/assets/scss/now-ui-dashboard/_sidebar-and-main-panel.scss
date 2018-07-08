@@ -98,7 +98,7 @@
             > a:not([href]):not([tabindex]):hover{
                 margin: 10px 15px 0;
                 border-radius: $btn-round-radius;
-                color: $white-color;
+                color: purple;
                 display: block;
                 text-decoration: none;
                 position: relative;
@@ -120,7 +120,7 @@
 
             &:hover:not(.active) > a i,
             &:focus:not(.active) > a i{
-                // color: $white-color;
+                color: purple;
             }
 
             &.active > a:not([data-toggle="collapse"]){
@@ -131,17 +131,17 @@
             &.active > a[data-toggle="collapse"]{
               background-color: $opacity-1;
               box-shadow: none;
-              color: $white-color;
+              color: purple;
 
               i{
-                color: $white-color;
+                color:purple;
               }
 
               & + div .nav .active a{
                 &:after{
                   content: "";
                   position: absolute;
-                  background-color: $white-color;
+                  background-color: purple;
                   border-radius: 30px;
                   box-shadow: $box-shadow;
                   color: $primary-color;
@@ -197,7 +197,7 @@
             height: 100%;
             content: "";
             display: block;
-            background: $white-color;
+            background: #F3EFEA;
             opacity: 1;
         }
     }
@@ -207,9 +207,12 @@
         padding: $padding-base-vertical $padding-base-horizontal;
         z-index: 4;
 
+        // color: #F3EFEA;
+
         a.logo-mini,
         a.logo-normal{
             @extend .animation-transition-general;
+
         }
 
         a.logo-mini{
@@ -219,12 +222,14 @@
             text-align: center;
             margin-left: 10px;
             margin-right: 12px;
+
         }
 
         a.logo-normal{
             display: block;
             opacity: 1;
             @include transform-translate-x(0px);
+
         }
 
         &:after{
@@ -236,13 +241,14 @@
             width: calc(100% - 30px);
             background-color: $opacity-5;
 
+
         }
 
         p{
             float: left;
             font-size: 20px;
             margin: 10px 10px;
-            color: $white-color;
+            color: #F3EFEA;
             line-height: 20px;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
@@ -253,7 +259,7 @@
             display: block;
             white-space: nowrap;
             font-size: $font-size-large;
-            color: $white-color;
+            color: purple;
             text-decoration: none;
             font-weight: $font-weight-normal;
             line-height: 30px;
@@ -270,12 +276,17 @@
         float: left;
         overflow: hidden;
 
+
+
+
         img{
             // width: 100px;
             // height: 150px;
+
         }
     }
 
+    // LOGO BACKGROUND - BEHIND THE LOGO
     &:before,
     &:after{
         display: block;
@@ -286,6 +297,7 @@
         height: 100%;
         top: 0;
         left: 0;
+        background: #F3EFEA;
     }
 
     &:after{
@@ -294,6 +306,7 @@
         z-index: 3;
     }
 
+    // THIS IS ALL TURNED OFF, ENABLED BY ADDING data-clour=""
     &[data-color="blue"]{
       @include sidebar-color($info-color);
     }
@@ -323,7 +336,7 @@
     .nav {
         > li > a,
         > li > a:hover{
-            color: $white-color;
+            color: purple;
         }
 
         > li > a:focus{
@@ -332,13 +345,13 @@
     }
 }
 
-
+// MAIN DASHBIOARD BACKGROUND
 .main-panel{
     position: relative;
     float: right;
     width: $sidebar-width;
     // width: 100%;
-    background-color: $light-gray;
+    background-color: red;
     background-color:#F3EFEA;
 
     @include transition (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
