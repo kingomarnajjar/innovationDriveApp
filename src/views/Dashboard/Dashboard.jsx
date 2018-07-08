@@ -226,7 +226,7 @@ class Dashboard extends React.Component {
             </Col>
           </Row>
         </div>
-        <div class="sketchfab-embed-wrapper">
+        {/* <div class="sketchfab-embed-wrapper">
           <iframe
           itle="This is a unique title"
             width="640"
@@ -237,7 +237,7 @@ class Dashboard extends React.Component {
             mozallowfullscreen="true"
             webkitallowfullscreen="true"
           />
-        </div>
+        </div> */}
       </div>
     );
   }
