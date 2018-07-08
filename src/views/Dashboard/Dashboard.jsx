@@ -228,6 +228,7 @@ class Dashboard extends React.Component {
         </div>
         <div class="sketchfab-embed-wrapper">
           <iframe
+          itle="This is a unique title"
             width="640"
             height="480"
             src="https://sketchfab.com/models/a09122ffac9c45e7bbca5a3ce52e21a5/embed"
